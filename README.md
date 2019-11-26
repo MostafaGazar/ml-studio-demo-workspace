@@ -2,7 +2,7 @@
 ```
 ├── README.md          Add some info about your project here
 ├── data               Your data files (ignored in version control) and datasets specifications lives here
-│   ├── preprocessed   Do not ever modify your raw data, do your preprocessing and store the final files here
+│   ├── processed      Do not ever modify your raw data, do your preprocessing and store the final files here
 │   ├── cache          Downloaded raw data files lives here
 │   └── raw            Do not download any files here
 │       ├── dataset1   
