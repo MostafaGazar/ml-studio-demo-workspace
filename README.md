@@ -34,7 +34,8 @@ If you want to use pipenv, initalize your environment by calling `pipenv lock` a
 ### Make Jupyter aware of the new environment
 After you create your environment, you will need make Jupyter aware of it by calling `python -m ipykernel install --user --name=SOME_NAME`.
 
-
+### Remove unused kernels
+First to find all the available kernel specs `jupyter kernelspec list` and then you can run `jupyter kernelspec remove KERNAL_NAME`
 
 # Access Kaggle datasets
 First you need to install kaggle cli `pip install kaggle --upgrade` and then generate an API key by going to https://www.kaggle.com/<username>/account and select 'Create API Token'
