@@ -32,8 +32,9 @@ First you need to change your current directory to the one where you want your e
 If you want to use pipenv, initalize your environment by calling `pipenv lock` and if you want to use conda, run `conda create --name YOUR_ENV_NAME python=3.7 -y`.
 
 ### Make Jupyter aware of the new environment
-After you create your environment, you will need make Jupyter aware of it by calling `python -m ipykernel install --user --name=SOME_NAME`.
+If you are using conda, just install `ipykernel` inside your new environment `conda install -n ENV_NAME ipykernel`
 
+Otherwise if you are using `pipenv`, `virtualenv`, etc... install `ipykernel` in your new environment `pip install ipykernel`. And then  `python -m ipykernel install --user --name=ENV_NAME`.
 
 
 # Access Kaggle datasets
