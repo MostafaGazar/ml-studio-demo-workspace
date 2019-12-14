@@ -17,10 +17,14 @@
 │   ├── __init__.py
 │   └── utils
 │       ├── __init__.py
-│       └── utils.py   
+│       └── utils.py
+├── serving            Your model serving classes lives here
+│   └── example_model
+│       ├── requirements.txt
+│       └── user_model.py
 ├── scripts            Your shell scripts that perform various tasks live here 
 │   └── cleanup.sh     Clear your cached data, logs, etc...
-└── weights
+└── weights            gitignore this directory if you do not want to push your models to git
 ```
 
 
