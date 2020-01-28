@@ -6,7 +6,7 @@ import base64
 class UserModel(object):
 
     def __init__(self):
-        self.model = keras.models.load_model('path_to_my_model.h5')
+        self.model = keras.models.load_model('model.h5')
 
     def predict(self, data):
         '''
