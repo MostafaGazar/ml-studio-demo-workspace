@@ -29,16 +29,21 @@
 
 
 ## Using virtual environments
-Conda or pipenv come pre-installed for easy quick use.
+Conda or pipenv come pre-installed for easy quick use. We recommend using conda though.
 
 ### Create a new environment
 First you need to change your current directory to the one where you want your environment config to be tracked.
-If you want to use pipenv, initalize your environment by calling `pipenv lock` and if you want to use conda, run `conda create --name YOUR_ENV_NAME python=3.7 -y`.
+If you want to use pipenv, initalize your environment by calling `pipenv lock` and if you want to use conda, run `conda create --name ENV_NAME python=3.7 -y`.
 
 ### Make Jupyter aware of the new environment
-If you are using conda, just install `ipykernel` inside your new environment `conda install -n ENV_NAME ipykernel`
+If you are using conda:
+```
+conda activate ENV_NAME                   
 
-Otherwise if you are using `pipenv`, `virtualenv`, etc... install `ipykernel` in your new environment `pip install ipykernel`. And then  `python -m ipykernel install --user --name=ENV_NAME`.
+ipython kernel install --user --name=ENV_NAME
+```
+
+If you are using `pipenv`, `virtualenv`, etc... install `ipykernel` in your new environment `pip install ipykernel`. And then  `python -m ipykernel install --user --name=ENV_NAME`.
 
 ### Remove unused kernels
 First to find all the available kernel specs `jupyter kernelspec list` and then you can run `jupyter kernelspec remove KERNAL_NAME`
